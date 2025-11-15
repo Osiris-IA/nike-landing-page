@@ -72,3 +72,14 @@ const swiper = new Swiper('.slide-wrapper', {
   }
 
 });
+
+const scenesSwiper = new Swiper('.scenes-swiper', {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    speed: 5000,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+    },
+});

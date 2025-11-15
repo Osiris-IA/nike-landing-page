@@ -261,6 +261,8 @@ form.example::after {
 
 @media (width <= 1024px) {
   .hero {
+    padding: 0;
+    margin: 0;
     text-align: center;
     align-items: center;
     h1 {
@@ -358,8 +360,8 @@ form.example::after {
 }
 
 .big-italic {
-  font-size: 2rem; 
-  font-style: italic; 
+  font-size: 2rem;
+  font-style: italic;
   line-height: 1.2;
 }
 
@@ -465,6 +467,18 @@ form.example::after {
 }
 
 /* behind the scenes */
+
+.scenes-swiper .swiper-slide {
+  width: 160px; /* ou ce que tu veux */
+}
+
+.scenes-swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 
 .scenes {
   h2 {

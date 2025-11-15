@@ -116,8 +116,8 @@
       </section>
 
       <section class="video">
-        <video class="col-12 embed-responsive-item" autoplay="true" loop muted="true">
-          <source src="assets/pictures/So_Win_Nike.mp4" alt="video nike" />
+        <video class="col-12 embed-responsive-item" autoplay="true" loop muted="true" playsinline="true">
+          <source src="assets/pictures/So_Win_Nike.mp4" type="video/mp4"/>
         </video>
       </section>
 
@@ -192,26 +192,20 @@
         </div>
       </section> -->
       <section class="scenes container" id="scenes">
-        <h2>Behind the scenes</h2>
-        <div class="carousel">
-          <div class="group">
-            <div class="card"><img src="assets/pictures/Cap1.png" /></div>
-            <div class="card"><img src="assets/pictures/Cap2.png" /></div>
-            <div class="card"><img src="assets/pictures/Cap3.png" /></div>
-            <div class="card"><img src="assets/pictures/Cap4.png" /></div>
-            <div class="card"><img src="assets/draw/draw3.png" /></div>
-            <div class="card"><img src="assets/draw/draw2.png" /></div>
-          </div>
-          <div aria-hidden class="group">
-            <div class="card"><img src="assets/pictures/Cap1.png" /></div>
-            <div class="card"><img src="assets/pictures/Cap2.png" /></div>
-            <div class="card"><img src="assets/pictures/Cap3.png" /></div>
-            <div class="card"><img src="assets/pictures/Cap4.png" /></div>
-            <div class="card"><img src="assets/draw/draw1.png" /></div>
-            <div class="card"><img src="assets/draw/draw2.png" /></div>
-          </div>
-        </div>
-      </section>
+  <h2>Behind the scenes</h2>
+
+  <div class="swiper scenes-swiper">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/pictures/Cap1.png" /></div>
+          <div class="swiper-slide"><img src="assets/pictures/Cap2.png" /></div>
+          <div class="swiper-slide"><img src="assets/pictures/Cap3.png" /></div>
+          <div class="swiper-slide"><img src="assets/pictures/Cap4.png" /></div>
+          <div class="swiper-slide"><img src="assets/draw/draw3.png" /></div>
+          <div class="swiper-slide"><img src="assets/draw/draw2.png" /></div>
+      </div>
+  </div>
+</section>
+
     </main>
     <footer>
       <section class="contact py-5" id="contact">
