@@ -204,6 +204,13 @@ form.example::after {
       right: 0;
     }
   }
+  form.example input {
+    display: none;
+  }
+  form.example button {
+    border: none;
+    color: black;
+  }
 }
 
 /* ---- hero ---- */
@@ -271,7 +278,7 @@ form.example::after {
     a {
       display: flex;
       justify-content: center;
-      z-index: 10;
+      z-index: 1;
     }
   }
 }
@@ -417,6 +424,9 @@ form.example::after {
 .swiper {
   margin: 2rem;
 }
+.bg-grey {
+  background-color: #f1f1f1;
+}
 /* .card-list .swiper-wrapper  */
 .card-list .card-item {
   color: white;
@@ -429,8 +439,8 @@ form.example::after {
   justify-content: center;
   backdrop-filter: blur(30px);
   border-radius: 10px;
-  background-color: #f1f1f1;
   border: 1px solid rgba(255, 255, 255, 0.5);
+
   & .shoes-image {
     width: 320px;
     overflow: hidden;
@@ -467,7 +477,6 @@ form.example::after {
 }
 
 /* behind the scenes */
-
 
 .scenes {
   h2 {
@@ -537,7 +546,20 @@ form.example::after {
     flex: 0 0 5em;
     height: 5em;
   }
+  .card-photo {
+    background-color: transparent;
+  }
 }
+
+@media (max-width: 767px) {
+  .card-list .card-item .card-photo {
+    background-color: transparent;
+  }
+  .scenes {
+    display: none;
+  }
+}
+
 /* ---- contact ---- */
 .contact {
   background-color: #1e1e1e;
