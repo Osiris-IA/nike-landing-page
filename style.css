@@ -424,6 +424,7 @@ form.example::after {
 .swiper {
   margin: 2rem;
 }
+
 .bg-grey {
   background-color: #f1f1f1;
 }
@@ -546,8 +547,14 @@ form.example::after {
     flex: 0 0 5em;
     height: 5em;
   }
-  .card-photo {
-    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    display: flex;
+  }
+  .display {
+    display: none;
   }
 }
 
@@ -555,8 +562,11 @@ form.example::after {
   .card-list .card-item .card-photo {
     background-color: transparent;
   }
-  .scenes {
+  .carousel {
     display: none;
+  }
+  .display {
+    display: block;
   }
 }
 
